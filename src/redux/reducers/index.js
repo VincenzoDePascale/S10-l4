@@ -1,3 +1,5 @@
+import { ADD } from "../actions/TypeDef";
+
 const initialState = {
   list: {
     content: [],
@@ -6,7 +8,7 @@ const initialState = {
 
 const mainReducer = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD":
+    case ADD:
       return {
         ...state,
         list: {
@@ -31,5 +33,3 @@ const mainReducer = (state = initialState, action) => {
       return state;
   }
 };
-
-export default mainReducer;

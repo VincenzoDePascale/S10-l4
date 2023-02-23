@@ -4,12 +4,12 @@ import "./index.css";
 import App from "./App";
 
 import { Provider } from "react-redux";
-import Store from "./redux/store";
+import store from "./redux/store/index";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <Provider store={Store}>
+  <Provider store={store}>
     <App />
   </Provider>
 );
